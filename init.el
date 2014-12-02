@@ -33,9 +33,8 @@
                       highlight-indentation
                       rainbow-identifiers
 		      clojure-mode
-		      clojure-test-mode
-		      clojurescript-mode
-		      cider))
+		      cider
+                      paredit))
 
 ;; install packages
 (dolist (p my-packages)
@@ -47,10 +46,7 @@
 (load-theme 'solarized-dark t)
 
 
-;; Make text look a little better
-
-
-
+;; Set windnow initial width and height
 (setq default-frame-alist
       '(
         (width . 100) ; character
